@@ -16,6 +16,10 @@ class AuthenticatedSessionController extends Controller
      */
     public function create(): View
     {
+        \Log::info('Auth check on login page', ['auth' => Auth::check(), 'user' => Auth::user()]);
+        if (Auth::check()) {
+            return redirect()->route('dashboard');
+        }
         return view('auth.login');
     }
 

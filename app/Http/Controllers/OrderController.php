@@ -13,4 +13,10 @@ class OrderController–resource extends Controller
     public function edit($id) { /* ... */ }
     public function update(Request $request, $id) { /* ... */ }
     public function destroy($id) { /* ... */ }
+
+    public function returnView()
+    {
+        $orders = \App\Models\Order::with('user')->latest()->get();
+        return view('dashboard.orders', compact('orders'));
+    }
 }

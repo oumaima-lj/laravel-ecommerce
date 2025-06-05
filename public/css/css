@@ -1,0 +1,118 @@
+/* General container spacing */
+.container {
+    padding-top: 100px; /* adjust if your navbar is taller */
+    padding-bottom: 60px;
+}
+
+/* Product wrapper layout */
+.container > .d-flex {
+    max-width: 1000px;
+    margin: 1px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+/* Image box styling */
+.container > .d-flex > div:first-child {
+    flex: 0 0 300px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+/* Product details area */
+.container > .d-flex > div:last-child {
+    flex: 1;
+    min-width: 250px;
+}
+
+.container h2 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.container .mb-3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #4ade80;
+}
+
+/* Quantity + Buttons wrapper */
+.container .d-flex.align-items-center.mb-3,
+.container .horizontal-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+/* Quantity pill */
+.quantity-pill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    padding: 5px 15px;
+    height: 2.5rem;
+}
+
+/* Shared button style */
+.btn.action-button {
+    background-color: #333333;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    border: none;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.btn.action-button:hover {
+    background-color: #4ade80;
+    color: white;
+}
+
+/* Categories text */
+.container small.text-muted {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container > .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container > .d-flex > div:first-child {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .container > .d-flex > div:last-child {
+        width: 100%;
+    }
+
+    .container .horizontal-group {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}

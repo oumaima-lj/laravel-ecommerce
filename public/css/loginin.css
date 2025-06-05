@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  body, html {
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    background: url('/storage/products/33.JPG') center/cover no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  }
+
+  .login-container h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .form-group label {
+    display: block;
+    color: #eee;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+
+  .form-group input::placeholder {
+    color: #ddd;
+  }
+
+  .remember-me {
+    display: flex;
+    align-items: center;
+    color: #eee;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+  }
+
+  .remember-me input {
+    margin-right: 0.5rem;
+  }
+
+  .forgot-password {
+    color: #eee;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: block;
+    text-align: right;
+    margin-top: 0.5rem;
+  }
+
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+
+  .login-btn {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #2ecc71;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .login-btn:hover {
+    background-color: #27ae60;
+  }
+
+  .error-message {
+    color: #ff4444;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
